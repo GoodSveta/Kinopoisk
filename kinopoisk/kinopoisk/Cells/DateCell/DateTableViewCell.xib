@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="DateTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="243" id="KGk-i7-Jjw" customClass="DateTableViewCell" customModule="kinopoisk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="262"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="262"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-as-MB1">
+                        <rect key="frame" x="33" y="12.5" width="32.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Все будущие" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHz-3i-dOD">
+                        <rect key="frame" x="235" y="14" width="77" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Wvm-O3-IJV">
+                        <rect key="frame" x="8" y="43" width="304" height="150"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Rzj-n2-9rO"/>
+                        </constraints>
+                        <connections>
+                            <action selector="dateDidChange:" destination="KGk-i7-Jjw" eventType="valueChanged" id="hnD-OI-7k8"/>
+                        </connections>
+                    </datePicker>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrS-W7-AvE">
+                        <rect key="frame" x="8" y="201" width="304" height="31"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Сброс"/>
+                        <connections>
+                            <action selector="resetButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Gt5-ef-MiS"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="o9Y-ez-Ko0">
+                        <rect key="frame" x="8" y="12" width="21" height="17.5"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="SrS-W7-AvE" firstAttribute="leading" secondItem="Wvm-O3-IJV" secondAttribute="leading" id="H7c-rL-3u1"/>
+                    <constraint firstAttribute="trailing" secondItem="fHz-3i-dOD" secondAttribute="trailing" constant="8" id="JoV-Qq-des"/>
+                    <constraint firstItem="Wvm-O3-IJV" firstAttribute="top" secondItem="o9Y-ez-Ko0" secondAttribute="bottom" constant="12" id="Mkg-Je-kkc"/>
+                    <constraint firstItem="Wvm-O3-IJV" firstAttribute="leading" secondItem="o9Y-ez-Ko0" secondAttribute="leading" id="MsM-lN-5qB"/>
+                    <constraint firstItem="GPj-as-MB1" firstAttribute="centerY" secondItem="o9Y-ez-Ko0" secondAttribute="centerY" id="bzB-om-jHw"/>
+                    <constraint firstItem="SrS-W7-AvE" firstAttribute="top" secondItem="Wvm-O3-IJV" secondAttribute="bottom" constant="8" id="cok-HU-ohc"/>
+                    <constraint firstItem="Wvm-O3-IJV" firstAttribute="trailing" secondItem="fHz-3i-dOD" secondAttribute="trailing" id="czk-dU-F9u"/>
+                    <constraint firstItem="o9Y-ez-Ko0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="jvw-Xd-SCJ"/>
+                    <constraint firstItem="GPj-as-MB1" firstAttribute="leading" secondItem="o9Y-ez-Ko0" secondAttribute="trailing" constant="4" id="n3y-Yb-vWy"/>
+                    <constraint firstItem="o9Y-ez-Ko0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="prV-ov-HmU"/>
+                    <constraint firstItem="fHz-3i-dOD" firstAttribute="centerY" secondItem="GPj-as-MB1" secondAttribute="centerY" id="su6-6p-TO3"/>
+                    <constraint firstItem="SrS-W7-AvE" firstAttribute="trailing" secondItem="Wvm-O3-IJV" secondAttribute="trailing" id="ySe-hf-WKx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLabel" destination="fHz-3i-dOD" id="UU6-1h-H7h"/>
+                <outlet property="datePicker" destination="Wvm-O3-IJV" id="aPD-QV-PlR"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="209.59821428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+    </resources>
+</document>

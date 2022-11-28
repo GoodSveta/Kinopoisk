@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="PremiersFilmsTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="270" id="KGk-i7-Jjw" customClass="PremiersFilmsTableViewCell" customModule="kinopoisk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-6C-1YA">
+                        <rect key="frame" x="0.0" y="0.0" width="403" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="График премьер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIn-gX-mzt">
+                                <rect key="frame" x="8" y="8.5" width="347" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Все" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="151-oV-b0R">
+                                <rect key="frame" x="363" y="8.5" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ua-yc-ZXV">
+                                <rect key="frame" x="0.0" y="0.0" width="403" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="allButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="119-jU-QvU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="151-oV-b0R" secondAttribute="trailing" constant="8" id="29s-cc-a9F"/>
+                            <constraint firstItem="151-oV-b0R" firstAttribute="centerY" secondItem="Wea-6C-1YA" secondAttribute="centerY" id="63O-Qp-vCI"/>
+                            <constraint firstAttribute="height" constant="38" id="63o-gR-cG3"/>
+                            <constraint firstItem="sIn-gX-mzt" firstAttribute="centerY" secondItem="Wea-6C-1YA" secondAttribute="centerY" id="784-25-Z1w"/>
+                            <constraint firstAttribute="trailing" secondItem="0ua-yc-ZXV" secondAttribute="trailing" id="9v1-ZM-7yw"/>
+                            <constraint firstItem="151-oV-b0R" firstAttribute="leading" secondItem="sIn-gX-mzt" secondAttribute="trailing" constant="8" id="Xca-t4-8cd"/>
+                            <constraint firstItem="sIn-gX-mzt" firstAttribute="leading" secondItem="Wea-6C-1YA" secondAttribute="leading" constant="8" id="fuo-Gt-YXx"/>
+                            <constraint firstAttribute="bottom" secondItem="0ua-yc-ZXV" secondAttribute="bottom" id="gZz-UM-eAZ"/>
+                            <constraint firstItem="0ua-yc-ZXV" firstAttribute="top" secondItem="Wea-6C-1YA" secondAttribute="top" id="yRn-Z9-4A5"/>
+                            <constraint firstItem="0ua-yc-ZXV" firstAttribute="leading" secondItem="Wea-6C-1YA" secondAttribute="leading" id="yaV-Qg-ur8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 февраля" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8I3-PK-QvL">
+                        <rect key="frame" x="8" y="38" width="73" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BVN-ae-qsu">
+                        <rect key="frame" x="28" y="62" width="375" height="189"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1Bw-Km-57M">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wea-6C-1YA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H9a-7D-AWP"/>
+                    <constraint firstAttribute="trailing" secondItem="Wea-6C-1YA" secondAttribute="trailing" id="NX3-ZR-nab"/>
+                    <constraint firstItem="8I3-PK-QvL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NiY-ZG-ni4"/>
+                    <constraint firstItem="Wea-6C-1YA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Si9-1k-m52"/>
+                    <constraint firstItem="Wea-6C-1YA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UXb-Sr-dZz"/>
+                    <constraint firstItem="BVN-ae-qsu" firstAttribute="top" secondItem="8I3-PK-QvL" secondAttribute="bottom" constant="8" id="Wsj-Tc-1sD"/>
+                    <constraint firstAttribute="trailing" secondItem="BVN-ae-qsu" secondAttribute="trailing" id="b2i-F6-IRX"/>
+                    <constraint firstItem="8I3-PK-QvL" firstAttribute="top" secondItem="Wea-6C-1YA" secondAttribute="bottom" id="r5m-Di-ec1"/>
+                    <constraint firstItem="BVN-ae-qsu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="rQt-BN-vpG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BVN-ae-qsu" secondAttribute="bottom" constant="8" id="zSU-4i-IbS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="BVN-ae-qsu" id="8QS-MI-XYu"/>
+                <outlet property="dateLabel" destination="8I3-PK-QvL" id="HwF-EA-0G9"/>
+                <outlet property="titleLabel" destination="sIn-gX-mzt" id="jrP-zj-C2T"/>
+            </connections>
+            <point key="canvasLocation" x="192.0289855072464" y="118.19196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

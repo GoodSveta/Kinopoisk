@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="TypeFilmTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="218" id="MKn-2U-Ogc" customClass="TypeFilmTableViewCell" customModule="kinopoisk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="262"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DateTableViewCell" tableViewCell="MKn-2U-Ogc" id="PxI-uU-fGt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="262"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жанр" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0J-7c-Zpd">
+                        <rect key="frame" x="31" y="12.5" width="38.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Все " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQt-8m-drL">
+                        <rect key="frame" x="286.5" y="14" width="25.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magazine" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TZZ-RZ-izb">
+                        <rect key="frame" x="8" y="10.5" width="19" height="21.5"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4O-wc-EzA">
+                        <rect key="frame" x="8" y="43" width="304" height="162"/>
+                    </pickerView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="TZZ-RZ-izb" firstAttribute="leading" secondItem="PxI-uU-fGt" secondAttribute="leading" constant="8" id="5zj-uI-HmY"/>
+                    <constraint firstItem="c0J-7c-Zpd" firstAttribute="centerY" secondItem="TZZ-RZ-izb" secondAttribute="centerY" id="Chi-DB-cfz"/>
+                    <constraint firstItem="c4O-wc-EzA" firstAttribute="trailing" secondItem="OQt-8m-drL" secondAttribute="trailing" id="Imc-eO-AE7"/>
+                    <constraint firstItem="c0J-7c-Zpd" firstAttribute="leading" secondItem="TZZ-RZ-izb" secondAttribute="trailing" constant="4" id="Ran-8Y-4CE"/>
+                    <constraint firstItem="c4O-wc-EzA" firstAttribute="top" secondItem="TZZ-RZ-izb" secondAttribute="bottom" constant="12" id="i0V-KP-3nB"/>
+                    <constraint firstItem="TZZ-RZ-izb" firstAttribute="top" secondItem="PxI-uU-fGt" secondAttribute="top" constant="11" id="kP0-hF-IIg"/>
+                    <constraint firstItem="OQt-8m-drL" firstAttribute="centerY" secondItem="c0J-7c-Zpd" secondAttribute="centerY" id="mpM-Vq-wRP"/>
+                    <constraint firstAttribute="trailing" secondItem="OQt-8m-drL" secondAttribute="trailing" constant="8" id="s3R-de-dEr"/>
+                    <constraint firstItem="c4O-wc-EzA" firstAttribute="leading" secondItem="TZZ-RZ-izb" secondAttribute="leading" id="xu9-aM-usI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="o91-Wy-sm8"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="currentTypeLabel" destination="OQt-8m-drL" id="FkG-b7-buM"/>
+                <outlet property="pickerView" destination="c4O-wc-EzA" id="1tG-40-nwq"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="24.776785714285712"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="magazine" catalog="system" width="113" height="128"/>
+    </resources>
+</document>
