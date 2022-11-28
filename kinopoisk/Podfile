@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'kinopoisk' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for kinopoisk
+pod 'NVActivityIndicatorView'
+pod "GlitchLabel", "~> 2.0.0"
+pod 'AlamofireNetworkActivityLogger'
+pod 'Alamofire'
+pod 'GoogleMaps'
+pod 'Firebase/Core'
+pod 'Firebase/RemoteConfig'
+pod 'Google-Mobile-Ads-SDK'
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'RealmSwift'
+
+
+end

@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  kinopoisk
+
+  Created by mac on 2.04.22.
+  
+*/
+"login_text" = "LogIn";
+"logout_text" = "LogOut";
